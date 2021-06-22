@@ -1,4 +1,3 @@
-
 const temporaryCookies = {
     ref_src: '',
     st: '',
