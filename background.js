@@ -1,28 +1,3 @@
-import '@babel/polyfill';
-import { MessageTypes } from './messageTypes';
-import { FULL_URL, ONLY_FANS_DOMAIN, ONLY_FANS_ME } from "./chromeUtils/api";
-import { fetchModels, login } from './chromeUtils/requests';
-import { createUUID } from '../utils/uuid';
-import {
-    AUTH_MODEL_ID,
-    AUTH_TOKEN_KEY,
-    NEXT_MODEL_KEY,
-    UUID_KEY,
-    getFromLocalStorageData,
-    removeFromLocalStorageData,
-    setToLocalStorageData,
-    setAuthKeyToStorage,
-    getAuthKeyFromStorage,
-    setNextModel,
-    getNextModel,
-    getCurrentModelFromStorage,
-    setCurrentModelToStorage,
-    setAuthModelIdKeyToStorage,
-    getAvailableModels,
-    setModelsToStorage,
-} from '../utils/localStorage';
-import { getCookiesByDomain, clearAllCookies } from './chromeUtils/cookie';
-import { sendMessage } from './chromeUtils/tabs';
 
 const temporaryCookies = {
     ref_src: '',
