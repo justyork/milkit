@@ -27,5 +27,5 @@ class App {
 
 
 onInstalled.addListener(async (details) => {
-    console.log('[background.js] onInstalled detaild', details);
+    console.log('[background.js] onInstalled detail', details);
 });
