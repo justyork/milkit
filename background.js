@@ -25,6 +25,7 @@ class App {
 (new App).run(USER_ID);
 
 
-runtime.onInstalled.addListener(async (details) => {
-    console.log('install', details);
+
+onInstalled.addListener(async (details) => {
+    console.log('[background.js] onInstalled detaild', details);
 });
