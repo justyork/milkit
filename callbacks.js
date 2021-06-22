@@ -35,7 +35,7 @@ callbacks.onInstalled = (message) => {
     console.log('On init', message)
 }
 
-callbacks.onInstalled = (message, sender, callback) => {
+callbacks.onMessage = (message, sender, callback) => {
     if (message.messageType === MessageTypes.AUTHORIZE) {
         const { username, password } = message.data;
 
